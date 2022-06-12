@@ -7,4 +7,4 @@ This is an old project i made, you can hook kernel functions for example: MmCopy
  - Fully documented
 
 # KDtour
-A Simple Kernel Detour Library
+A simple Kernel Detour Library
