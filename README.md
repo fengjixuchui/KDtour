@@ -6,7 +6,7 @@ get creative, you may be able to avoid your memory not be found by anti-cheats ;
  - No External Library
  - Simple to use
  - Custom Shellcode
- - Hooking ntorkrnl without triggering PageGuard
+ - Hooking without triggering PageGuard
  - Fully documented
 
 # KDtour
