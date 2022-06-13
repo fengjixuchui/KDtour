@@ -4,7 +4,7 @@
 							\ \  _"-.  \ \ \/\ \ \/_/\ \/ \ \ \/\ \  \ \ \_\ \  \ \  __<
 							 \ \_\ \_\  \ \____-    \ \_\  \ \_____\  \ \_____\  \ \_\ \_\
 							  \/_/\/_/   \/____/     \/_/   \/_____/   \/_____/   \/_/ /_/
-									 simple kernel detour library made by Tuple ©
+									 simple kernel detour library made by Tuple Â©
 */
 
 #ifndef DISABLE_INCLUDES
@@ -50,7 +50,7 @@ private:
 
 	void *src = nullptr;												// our hooked function address
 	void *dst = nullptr;												// our handler address
-	unsigned char org[38] = { 0x99 };									// original bytes for uninstall
+	unsigned char org[38] = { 0x00 };									// original bytes for uninstall
 	bool enabled = false;												// for toggling
 
 public:
@@ -81,12 +81,7 @@ public:
 
 	auto uninstall( ) -> bool											// uninstall function, restore all stolen bytes
 	{
-		if ( org[0] != 0x99 )
-		{
-			return this->wrom( this->src, this->org, 38 );					// write back the saved bytes
-		}
-
-		return false;
+		return this->wrom( this->src, this->org, 38 );					// write back the saved bytes
 	}
 
 	auto toggle( ) -> bool												// a small wrapper arround uninstall and install
