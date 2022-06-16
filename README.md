@@ -1,4 +1,4 @@
-This is an old project i made, you can hook kernel functions for example: MmCopyMemory, MmCopyVirtualMemory and so on. (winver: 21H2)
+This is an old project i made, you can hook kernel functions for example: MmCopyMemory, MmCopyVirtualMemory and so on. (without PG)
 
 get creative, you may be able to avoid your memory not be found by anti-cheats ;)
 
